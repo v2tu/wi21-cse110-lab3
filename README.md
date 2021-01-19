@@ -1,1 +1,2 @@
-# v2tu.github.io-cse110-lab-2
+# wi21-cse110-lab3
+https://v2tu.github.io/wi21-cse110-lab3/
