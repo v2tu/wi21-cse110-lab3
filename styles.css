@@ -1,21 +1,28 @@
+/* This is my css style sheet */
 #highlight {
   background-color: yellow;
 }
 
 * {
-  text-color: #000;
+  color: #000;
+  margin: auto;
+  font-family: "Times New Roman", Times, serif;
+  position: relative;
 }
 
 i, b {
-  text-color: rgb(255, 105, 180);
+  font-size: 1rem; 
+  color: rgb(255, 105, 180);
 }
 
 p.useful {
-  text-color: hsl(62, 97%, 62%);
+  font-size: 25pt;
+  color: hsl(62, 97%, 62%);
+  display: inline; 
 }
 
 a[target=web] {
-  text-color: rgba(0, 119, 190, 0.5);
+  color: rgba(0, 119, 190, 0.5);
 }
 
 input:default {
@@ -24,21 +31,96 @@ input:default {
 
 body h2 {
   text-align: center;
+  font-size: 3ch;
 }
 
 h3 ~ ul {
+  margin: left;
+  padding-right;
   border-radius: 25px;
-  background: hsla(250, 93%, 52%, 0.75);
+  border-style: double;
+  border-color: hsla(250, 93%, 52%, 0.75);
   padding: 20px;
   width: 200px;
   height: 150px;
 }
 
 body > h3 {
+  font-size: 0.75em;
   text-align: center;
+  max-width: 500px;
 }
 
 table + caption {
   text-align: center; 
 }
 
+h1{
+  font-size: 1in;
+  text-decoration: underline;
+  margin-right;
+  padding: top right;
+  position: fixed;
+}
+
+/* link not clicked on */
+a:link {
+  color: blue;
+}
+
+/* link that is clicked on */
+a:visited {
+  color: red;
+}
+
+/* link that is hovered over by the mouse */
+a:hover {
+  color: pink;
+}
+
+/* link that is selected */
+a:active {
+  color: yellow;
+}
+
+.parent{
+  display: flex;
+  height: 200 px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.child{
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  align-self: auto;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    background-color: black;
+    color: white;
+  }
+}
+
+h5{
+  display: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  place-self: auto;
+  grid-column-start: auto;
+}
