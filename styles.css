@@ -1,1 +1,12 @@
-
+#highlight{
+  background-color: yellow;
+}
+*{
+  text-color: #000;
+}
+i, b{
+  text-color: rgb(255, 105, 180);
+}
+a[target=web]{
+  text-color: rgba(0, 119, 190, 0.5);
+}
