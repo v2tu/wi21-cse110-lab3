@@ -1,12 +1,44 @@
 #highlight{
   background-color: yellow;
 }
+
 *{
   text-color: #000;
 }
+
 i, b{
   text-color: rgb(255, 105, 180);
 }
+
+p.useful{
+  border-color: hsl(62, 97%, 62%);
+}
+
 a[target=web]{
   text-color: rgba(0, 119, 190, 0.5);
 }
+
+input:default {
+  box-shadow: 0 0 1px 1px green;
+}
+
+body h2{
+  text-align: center;
+}
+
+h3 ~ ul{
+  border-radius: 25px;
+  background: hsla(250, 93%, 52%, 0.45);
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+}
+
+body > h3{
+  text-align: center;
+}
+
+table + caption{
+  text-align: center; 
+}
+
